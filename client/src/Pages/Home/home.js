@@ -67,6 +67,8 @@ function Home() {
           down. Scroll back up to increase volume again.
         </p>
       </section>
+      <h1>hello</h1>
+
     </div>
   );
 }
