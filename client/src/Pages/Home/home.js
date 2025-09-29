@@ -39,37 +39,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="home-container">
-      {/* Hero Section with Video */}
-      <section className="hero-section">
-        <video
-          ref={videoRef}
-          className="background-video"
-          autoPlay
-          loop
-          playsInline
-        >
-          <source src="/home_img/killshortvideo.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
-
-        <div className="overlay-text">
-          <h1 className="fade-in">Welcome to My Website</h1>
-          <p className="slide-up">Building Modern & Professional Websites</p>
-        </div>
-      </section>
-
-      {/* Content Section */}
-      <section className="content-section">
-        <h2>Scroll Down Content</h2>
-        <p>
-          Video continues playing in loop. Volume decreases as you scroll
-          down. Scroll back up to increase volume again.
-        </p>
-      </section>
-      <h2>home </h2>
-      <h3>sourabh</h3>
-
+    <div>
+      
     </div>
   );
 }
