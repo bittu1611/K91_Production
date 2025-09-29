@@ -9,7 +9,7 @@
   transform: translateY(50px);
   animation: fadeSlideUp 1s forwards ease-out;
   animation-delay: 0.2s;
-  top: 100px;
+  top: 0px;
 }
 
 @keyframes fadeSlideUp {
