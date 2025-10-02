@@ -1,0 +1,263 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(139,0,0,0.7);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(255,0,0,0.9);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(45deg, #200101, #000000, #1b0202, #000000);
+  background-size: 300% 300%;
+  text-align: center;
+  padding: 6rem 2rem;
+  animation: backgroundShift 8s ease infinite;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #ffcccc;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+/* Services Grid */
+.services {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.service-card {
+  background-color: #1a0000;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  /* box-shadow: 0 8px 20px rgba(139,0,0,0.7); */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.8s ease-out both;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,0,0,0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.6s;
+}
+
+.service-card:hover::before {
+  left: 100%;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.service-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.service-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.service-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(68, 4, 4, 0.8);
+  /* animation: glow 2s ease-in-out infinite; */
+}
+
+.service-card .emoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.service-card:hover .emoji {
+  animation: pulse 0.6s ease-in-out;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card p {
+  color: #ffcccc;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Section */
+.cta {
+  background-color: #250202;
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 2rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out 0.5s both;
+}
+
+.cta button {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  color: #8b0000;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.7s both;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255,0,0,0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.cta button:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(255,0,0,0.5);
+  border: 1px solid black;
+}
+
+.cta button:active {
+  transform: scale(0.95);
+}
