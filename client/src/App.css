@@ -1,3 +1,53 @@
+:root {
+  /* Your Colors */
+  --primary-dark: #003049;      /* Dark Blue */
+  --primary-red: #c1121f;       /* Red */
+  --primary-cream: #fdf0d5;     /* Cream */
+  --primary-blue: #669bbc;      /* Light Blue */
+  --primary-black: #780000;     /* Dark Red/Maroon */
+  
+  /* Dark Theme Variables */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --card-bg: #2d2d2d;
+  --border-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Global Transparent Effects */
+.transparent-card {
+  background: rgba(45, 45, 45, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -34,5 +84,4 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
+  } }
