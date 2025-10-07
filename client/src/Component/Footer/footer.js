@@ -8,7 +8,7 @@ function Footer() {
         
         {/* Left with Logo */}
         <div className="footer-left">
-          <img src="/navbar_img/K91PNGLOGO.png" alt="" className="footer-logo" />
+          {/* <img src="/navbar_img/K91PNGLOGO.png" alt="K91 Productions Logo" className="footer-logo" /> */}
           <p>Bringing your vision to life with stunning visuals and creativity.</p>
         </div>
 
@@ -25,10 +25,10 @@ function Footer() {
         <div className="footer-socials">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
