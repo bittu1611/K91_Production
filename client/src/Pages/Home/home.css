@@ -431,7 +431,7 @@ html {
 
 .loading-shimmer {
   animation: shimmer 1.5s infinite linear;
-  background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+  background: linear-gradient(to right, #f4f4f4 8%, #edeef1 18%, #f6f7f8 33%);
   background-size: 800px 104px;
 }
 
